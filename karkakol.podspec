@@ -16,5 +16,5 @@ Pod::Spec.new do |spec|
 
   spec.author       = { "Karol Kąkol" => "kakol.karol00@gmail.com" }
   spec.source       = { :git => "https://github.com/karkakol/temp.git", :tag => "#{spec.version}" }
-  spec.source_files = 'packages/ios-client/karkakol/Sources/**/*'
+  spec.source_files = 'packages/ios-client/kk/Sources/**/*'
 end
