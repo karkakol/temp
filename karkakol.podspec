@@ -11,8 +11,10 @@ Pod::Spec.new do |spec|
   spec.homepage     = "https://github.com/karkakol/temp"
   spec.license          = { :type => 'Apache-2.0 license', :file => 'packages/ios-client/LICENSE' }
 
-  spec.author             = { "Karol Kąkol" => "kakol.karol00@gmail.com" }
+  spec.ios.deployment_target = '13.0'
+  spec.swift_version = '5.0'
 
+  spec.author       = { "Karol Kąkol" => "kakol.karol00@gmail.com" }
   spec.source       = { :git => "https://github.com/karkakol/temp", :tag => "#{spec.version}" }
-  spec.source_files = 'packages/ios-client/Sources/**/*'
+  spec.source_files = 'packages/ios-client/karkakol/Sources/**/*'
 end
