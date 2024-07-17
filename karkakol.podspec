@@ -4,16 +4,15 @@
 
 
 Pod::Spec.new do |spec|
-
-
   spec.name         = "karkakol"
   spec.version      = "1.1.0"
   spec.summary      = "A short description of karkakol."
   spec.description  = "My first temp podspec"
-  spec.homepage     = "http://EXAMPLE/karkakol"
-  spec.license      = "MIT (example)"
+  spec.homepage     = "https://github.com/karkakol/temp"
+  spec.license          = { :type => 'Apache-2.0 license', :file => 'packages/ios-client/LICENSE' }
+
   spec.author             = { "Karol Kąkol" => "kakol.karol00@gmail.com" }
 
-  spec.source       = { :git => "http://EXAMPLE/karkakol.git", :tag => "#{spec.version}" }
-  s.source_files = 'packages/ios-client/Sources/**/*'
+  spec.source       = { :git => "https://github.com/karkakol/temp", :tag => "#{spec.version}" }
+  spec.source_files = 'packages/ios-client/Sources/**/*'
 end
