@@ -10,13 +10,11 @@ jobs:
     runs-on: macOS-latest
     permissions:
       contents: write
+    env:
+      TAG_NAME: ${{ github.ref_name }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-
-      - name: Get the tag name
-        id: tag_name
-        run: echo "::set-output name=TAG_NAME::${GITHUB_REF#refs/tags/}"
 
       - name: Git configuration
         run: |
@@ -26,8 +24,8 @@ jobs:
       - name: Create GitHub release
         uses: softprops/action-gh-release@v2
         with:
-          name: 'Release ${{ steps.tag_name.outputs.TAG_NAME }}'
-          tag_name: ${{ steps.tag_name.outputs.TAG_NAME }}
+          name: 'Release ${{ env.TAG_NAME }}'
+          tag_name: ${{ env.TAG_NAME }}
           generate_release_notes: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
