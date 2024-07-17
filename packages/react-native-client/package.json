@@ -1,9 +1,10 @@
 {
   "name": "@karolkakol/my-ts-lib",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "My npm package written in TS",
   "main": "build/index.js",
   "types": "build/index.d.ts",
+  "repository": "https://github.com/karkakol/temp/",
   "license": "MIT",
   "scripts": {
     "build": "tsc"
