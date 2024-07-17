@@ -8,7 +8,8 @@ on:
 jobs:
   release-mobile-packages:
     runs-on: macOS-latest
-
+    permissions:
+      contents: write
     steps:
       - name: Checkout
         uses: actions/checkout@v4
