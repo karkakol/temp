@@ -1,6 +1,6 @@
 {
   "name": "@karolkakol/my-ts-lib",
-  "version": "1.0.0",
+  "version": "v1.0.0",
   "description": "My npm package written in TS",
   "main": "build/index.js",
   "types": "build/index.d.ts",
