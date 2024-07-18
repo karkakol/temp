@@ -5,7 +5,7 @@
 
 Pod::Spec.new do |spec|
   spec.name         = "karkakol"
-  spec.version      = "1.0.3"
+  spec.version      = "1.0.4"
   spec.summary      = "Fully acceptable and reliable package to have some fun"
   spec.description  = "Do anything you wont. Sky is the limit. Anyone can do anything. Belive in youself"
   spec.homepage     = "https://github.com/karkakol/temp"
